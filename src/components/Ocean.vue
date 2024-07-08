@@ -1,0 +1,54 @@
+<script setup lang="ts"></script>
+
+<template>
+  <div class="ocean">
+    <div class="wave"></div>
+    <div class="wave wave2"></div>
+  </div>
+</template>
+
+<style scoped>
+.ocean {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  width: 6400px;
+  top: -100vh;
+  left: 0;
+  height: 198px;
+  transform: translate(0, 0, 0);
+  opacity: 0.2;
+  animation: wave 9s ease infinite;
+}
+
+.wave:nth-of-type(2) {
+  top: -168px;
+  animation: swell 7s ease infinite;
+  opacity: 0.1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate(0, -30px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+}
+</style>
