@@ -2,25 +2,25 @@
 
 <template>
   <div class="ocean">
-    <div class="wave"></div>
-    <div class="wave wave2"></div>
+    <div class="wave parallax"></div>
   </div>
 </template>
 
 <style scoped>
 .ocean {
   width: 100%;
-  position: absolute;
+  height: 100%;
+  z-index: -999;
+  position: fixed;
   bottom: 0;
   left: 0;
-  background: #015871;
 }
 
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   position: absolute;
   width: 6400px;
-  top: -100vh;
+  bottom: 0;
   left: 0;
   height: 198px;
   transform: translate(0, 0, 0);
@@ -32,6 +32,13 @@
   top: -168px;
   animation: swell 7s ease infinite;
   opacity: 0.1;
+}
+
+.parallax {
+  animation-name: parallax;
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  animation-direction: alternate;
+  animation-timeline: scroll(root);
 }
 
 @keyframes wave {
@@ -49,6 +56,15 @@
   }
   50% {
     transform: translate(0, 5px);
+  }
+}
+
+@keyframes parallax {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 </style>

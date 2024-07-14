@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Patua One"'],
+        sans: ['Tuppence'],
         serif: ['Roboto']
       }
     },

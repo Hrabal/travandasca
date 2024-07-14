@@ -7,22 +7,24 @@ import Ocean from './components/Ocean.vue'
 </script>
 
 <template>
-  <header></header>
+  <div>
+    <header></header>
 
-  <main class="flex flex-col mx-auto container gap-8 pb-12">
-    <Logo></Logo>
-    <Presentation></Presentation>
-    <div class="text-red text-3xl mx-auto">{{ $t('message.wines') }}</div>
-    <div class="flex gap-8 mx-auto">
-      <Wine
-        v-for="wine in ['balenaazzurra2023', 'polpogiallo2023']"
-        v-bind:key="wine"
-        :wine="wine"
-      ></Wine>
-    </div>
-    <Casetta></Casetta>
+    <main class="flex flex-col mx-auto container gap-8 pb-12">
+      <Logo></Logo>
+      <Presentation></Presentation>
+      <div class="text-red text-3xl mx-auto">{{ $t('message.wines') }}</div>
+      <div class="flex gap-8 mx-auto">
+        <Wine
+          v-for="wine in ['balenaazzurra2023', 'polpogiallo2023']"
+          v-bind:key="wine"
+          :wine="wine"
+        ></Wine>
+      </div>
+      <Casetta></Casetta>
+    </main>
     <Ocean></Ocean>
-  </main>
+  </div>
 </template>
 
 <style scoped></style>
