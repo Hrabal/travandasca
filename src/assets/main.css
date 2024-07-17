@@ -1,16 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  @font-face {
-    font-family: Tuppence;
-    font-weight: 100;
-    src: url(/fonts/Tuppence-100.otf) format('otf');
-  }
-  @font-face {
-    font-family: Tuppence;
-    font-weight: 500;
-    src: url(/fonts/Tuppence-500.otf) format('otf');
-  }
-}

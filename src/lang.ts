@@ -11,12 +11,14 @@ export const messages = {
       label: 'The label',
       wines: 'Our Wines',
       casettaTitle: 'Stay with us!',
-      casettaDescription: 'Blah blah blah'
+      casettaName: 'The little house in Montenero',
+      casettaLink: 'Book your stay with AirBnb',
+      casettaDescription: 'Discover the Cinque Terre in the most authentic way. Suspended 350 meters above sea level, the Casetta di Montenero is an oasis of peace among the centuries-old holm oaks and dry stone wall terraces. Immersed in the nature of the Cinque Terre, on the pitch of the Sanctuary of Montenero. Let yourself be lulled by the sound of cicadas and enjoy the sunset from a unique view of one of the most spectacular coasts in the world.'
     },
     balenaazzurra2023: {
       name: 'BalenaAzzurra',
       grapes:
-        'Vermentino Ligure 50% from our friends in Ceriale (Savona), Trebbiano Toscano 50% from our friends in Gragnano (Lucca) and Piombino (Livorno).',
+        'Vermentino Ligure from our friends in Ceriale (Savona), Trebbiano Toscano from our friends in Gragnano (Lucca) and Piombino (Livorno).',
       method:
         'Soft direct pressing of Trebbiano, fermented in stainless steel tank without temperature control. Vermentino remains in contact with the skins in an open vat until the end of alcoholic fermentation (about 10 days). After malolactic fermentation, the two wines are transferred and blended in a steel tank, where they rest until bottling in the following spring.',
       description:
@@ -28,7 +30,7 @@ export const messages = {
     polpogiallo2023: {
       name: 'PolpoGiallo',
       grapes:
-        'Malvasia di Candia Aromatica 85%, Trebbiano Modenese 15% from our friends in Castelvetro di Modena (Emilia Romagna).',
+        'Malvasia di Candia Aromatica, Trebbiano Modenese from our friends in Castelvetro di Modena (Emilia Romagna).',
       method:
         'Soft direct pressing of both grapes together, fermentation in stainless steel tank at controlled temperature. When reaching 10 g/L of residual sugars, fermentation is halted by a sudden temperature drop. After settling of coarse lees, the wine is racked, and temperature increased. Upon resumption of fermentation, we proceed to bottling so that the first fermentation is completed in bottle (metodo ancestrale).',
       description:
@@ -50,12 +52,14 @@ export const messages = {
       label: "L'etichetta",
       wines: 'I nostri vini',
       casettaTitle: 'Alloggia da noi!',
-      casettaDescription: 'Blah blah blah'
+      casettaName: 'La casetta di Montenero',
+      casettaLink: 'Prenota con AirBnb',
+      casettaDescription: 'Scopri le Cinque Terre nel modo più autentico. Sospesa a 350 metri sul livello del mare, la Casetta di Montenero è un\'oasi di pace tra i lecci secolari e le terrazze di muri a secco. Immersa nella natura delle Cinque Terre, sulla piazzola del Santuario di Montenero. Fatevi cullare dal suono delle cicale e godetevi il tramonto da una visuale unica su una delle coste più spettacolari del mondo.'
     },
     balenaazzurra2023: {
       name: 'BalenaAzzurra',
       grapes:
-        'Vermentino Ligure 50% degli amici di Ceriale (SV), Trebbiano Toscano 50% degli amici di Gragnano (LU) e Piombino (LI)',
+        'Vermentino Ligure degli amici di Ceriale (SV), Trebbiano Toscano degli amici di Gragnano (LU) e Piombino (LI)',
       method:
         'pressatura soffice diretta del Trebbiano, fermentazione in acciaio senza controllo della temperatura. Il Vermentino resta a contatto con le bucce in mastello aperto fino alla fine della fermentazione alcolica (circa 10 giorni). Dopo le fermentazioni malolattiche le masse vengono travasate e unite in acciaio, dove riposano fino all’imbottigliamento nella primavera successiva.',
       description:
@@ -67,7 +71,7 @@ export const messages = {
     polpogiallo2023: {
       name: 'PolpoGiallo',
       grapes:
-        'Malvasia di Candia Aromatica 85%, Trebbiano Modenese 15% degli amici di Castelvetro di Modena (MO)',
+        'Malvasia di Candia Aromatica, Trebbiano Modenese degli amici di Castelvetro di Modena (MO)',
       method:
         'pressatura soffice diretta di entrambe le uve insieme, fermentazione in acciaio a temperatura controllata. Al raggiungimento di 10 g/L di zuccheri residui, interruzione della fermentazione con il freddo. Dopo la sedimentazione delle fecce grossolane, travaso e aumento della temperatura. Alla ripresa della fermentazione, imbottigliamento e conclusione della fermentazione in bottiglia (metodo ancestrale).',
       description:

@@ -1,70 +1,64 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="ocean">
-    <div class="wave parallax"></div>
-  </div>
+<div id="bgWaves">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,175,206,0.05)" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,175,206,0.05)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,175,206,0.05)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0,175,206,0.05)" />
+    </g>
+    </svg>
+</div>
 </template>
 
 <style scoped>
-.ocean {
-  width: 100%;
-  height: 100%;
-  z-index: -999;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
+  #bgWaves {
+        width: 100%;
+    }
 
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
-  position: absolute;
-  width: 6400px;
-  bottom: 0;
-  left: 0;
-  height: 198px;
-  transform: translate(0, 0, 0);
-  opacity: 0.2;
-  animation: wave 9s ease infinite;
-}
+    .waves {
+        position:relative;
+        width: 100%;
+    }
 
-.wave:nth-of-type(2) {
-  top: -168px;
-  animation: swell 7s ease infinite;
-  opacity: 0.1;
-}
+    .parallax > use {
+        animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    }
+    .parallax > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 25s;
+    }
+    .parallax > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 22s;
+    }
+    .parallax > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 23s;
+    }
+    .parallax > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 27s;
+    }
+    @keyframes move-forever {
+        0% {
+            transform: translate3d(-90px,0,0);
+        }
+        100% { 
+            transform: translate3d(85px,0,0);
+        }
+    }
 
-.parallax {
-  animation-name: parallax;
-  animation-duration: 1ms; /* Firefox requires this to apply the animation */
-  animation-direction: alternate;
-  animation-timeline: scroll(root);
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-@keyframes swell {
-  0%,
-  100% {
-    transform: translate(0, -30px);
-  }
-  50% {
-    transform: translate(0, 5px);
-  }
-}
-
-@keyframes parallax {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    @media (max-width: 768px) {
+        .waves {
+            height:40px;
+            min-height:40px;
+        }
+    }
 </style>

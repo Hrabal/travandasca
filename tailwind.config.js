@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Tuppence'],
-        serif: ['Roboto']
+        sans: ['"Odor Mean Chey"'],
+        serif: ['"Josefin Sans"']
       }
     },
     colors: {
