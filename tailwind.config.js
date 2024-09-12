@@ -14,7 +14,9 @@ export default {
       sea: '#00AFCCff',
       white: '#E3EBE4ff',
       red: '#EE426Cff',
-      blue: '#3B1D5Eff'
+      blue: '#3B1D5Eff',
+      balenaazzurra2023: '#00AFCCff',
+      polpogiallo2023: '#ffd64f',
     }
   },
   plugins: []

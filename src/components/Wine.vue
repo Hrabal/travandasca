@@ -1,20 +1,14 @@
 <script setup lang="ts">
 const props = defineProps(['wine'])
-const ids = {
-  description: props.wine + 'desc',
-  grapes: props.wine + 'grapes',
-  method: props.wine + 'method',
-  label: props.wine + 'label'
-}
 </script>
 
 <template>
   <div class="grid lg:grid-cols-2 rounded-lg lg:border border-blue p-6 lg:p-12">
-      <div class="text-sea text-5xl text-center">
+      <div :class="[`text-${props.wine}`, 'text-5xl', 'text-center']">
         <div class="lg:pt-36">
 
           {{ $t(props.wine + '.name') }}
-          <img v-bind:src="`/images/${props.wine}.jpg`" class="mx-auto w-5/6 pt-8" />
+          <img v-bind:src="`/images/${props.wine}.png`" class="mx-auto w-5/6 pt-8" />
         </div>
       </div>
     <div class="pt-6 lg:pt-0">
